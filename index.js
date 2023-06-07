@@ -89,22 +89,11 @@
     
 
     // blockly code
-    var prefix, member_xp, member_level, message_cooldown, member_xp_needed, message_per_minute, db_xp, db_level;
-    
-    function mathRandomInt(a, b) {
-      if (a > b) {
-        // Swap a and b to ensure a is smaller.
-        var c = a;
-        a = b;
-        b = c;
-      }
-      return Math.floor(Math.random() * (b - a + 1) + a);
-    }
+    var prefix, member_xp, member_level, member_xp_needed;
     
     
     s4d.client.on('ready', async () => {
       prefix = '!';
-   
     
     });
     
@@ -129,28 +118,20 @@
         (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.Jail().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
       }
       // U can replace delete with smth else
-      if (((s4dmessage.content) || '').startsWith((String(prefix) + 'tatoo') || '')) {
-        (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.Tatoo().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
-      }
-      // U can replace delete with smth else
-      if (((s4dmessage.content) || '').startsWith((String(prefix) + 'facepalm') || '')) {
-        (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.Facepalm().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
-      }
-      // U can replace delete with smth else
-      if (((s4dmessage.content) || '').startsWith((String(prefix) + 'beautiful') || '')) {
-        (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.Beautiful().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
-      }
-      // U can replace delete with smth else
       if (((s4dmessage.content) || '').startsWith((String(prefix) + 'bobross') || '')) {
         (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.Bobross().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
-        // U can replace delete with smth else
-        if (((s4dmessage.content) || '').startsWith((String(prefix) + 'discordblack') || '')) {
-          (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.DiscordBlack().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
-        }
-        // U can replace delete with smth else
-        if (((s4dmessage.content) || '').startsWith((String(prefix) + 'ad') || '')) {
-          (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.Ad().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
-        }
+      }
+      // U can replace delete with smth else
+      if (((s4dmessage.content) || '').startsWith((String(prefix) + 'discordblack') || '')) {
+        (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.DiscordBlack().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
+      }
+      // U can replace delete with smth else
+      if (((s4dmessage.content) || '').startsWith((String(prefix) + 'rip') || '')) {
+        (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.Rip().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
+      }
+      // U can replace delete with smth else
+      if (((s4dmessage.content) || '').startsWith((String(prefix) + 'ad') || '')) {
+        (s4dmessage.channel).send({files:[(new Discord.MessageAttachment((await new DIG.Ad().getImage(((s4dmessage.mentions.members.first()).displayAvatarURL({format:"png"})))), "image.png"))]});
       }
     
     });
@@ -206,53 +187,6 @@
         }}
     
         });
-    
-    s4d.client.on('messageCreate', async (s4dmessage) => {
-      if (!((s4dmessage.author).bot)) {
-    
-            /*
-            Anti-spam xp system
-            */
-           if (message_per_minute == 0 || message_per_minute == null) {
-          message_cooldown = (Math.floor(new Date().getTime()/1000)) + 60;
-          console.log(message_cooldown);
-        }
-        if (message_cooldown > (Math.floor(new Date().getTime()/1000))) {
-          message_per_minute = (typeof message_per_minute === 'number' ? message_per_minute : 0) + 1;
-          if (message_per_minute > 15) {
-            return
-          }
-        } else if (message_cooldown <= (Math.floor(new Date().getTime()/1000))) {
-          message_per_minute = 0;
-        }
-        console.log(message_per_minute);
-        db_xp = [(s4dmessage.author).id,'-',(s4dmessage.guild).id,'-xp'].join('');
-        db_level = [(s4dmessage.author).id,'-',(s4dmessage.guild).id,'-level'].join('');
-    
-            /*
-            Actual leveling system
-            */
-           if (!levels.has(String(db_xp))) {
-          levels.set(String(db_xp), 0);
-        } else if (!levels.has(String(db_level))) {
-          levels.set(String(db_level), 0);
-        }
-        member_xp = levels.get(String(db_xp));
-        member_level = levels.get(String(db_level));
-        member_xp = (typeof member_xp === 'number' ? member_xp : 0) + mathRandomInt(10, 25);
-        levels.set(String(db_xp), member_xp);
-        // Example:
-        // XP needed for level 2: 2 x 2 x 100 = 400 (xp)
-        //
-        if (member_xp > (member_level + 1) * (member_level + 1) * 100) {
-          member_level = member_level + 1;
-          member_xp_needed = (member_level + 1) * (member_level + 1) * 100 - member_xp;
-          s4dmessage.channel.send({content:String((['Congrats ',s4dmessage.author,', you\'ve leveled up to ',member_level,'. You need ',member_xp_needed,' xp to get to level ',member_level + 1].join('')))});
-          levels.set(String(db_level), member_level);
-        }
-      }
-    
-    });
     
     return s4d
 })();

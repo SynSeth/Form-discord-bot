@@ -1,0 +1,1185 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="-8Wbv(jP@O;slx/`tr1k">prefix</variable>
+    <variable id="M[vaD@JoJPb/1tEa6?p~">member_xp</variable>
+    <variable id="+@B4vb]CdaQAcV3iYZ3L">member_level</variable>
+    <variable id="?X1MhISYX#`t0[)Uz%FZ">member_xp_needed</variable>
+  </variables>
+  <block type="s4d_on_connected" id="yOd}0#!}a|bdC^fed:Bg" x="2067" y="-366">
+    <statement name="STATEMENTS">
+      <block type="variables_set" id="|%hCY;no#IJ%o*]6!.Hd">
+        <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+        <value name="VALUE">
+          <block type="text" id="bg}-`cZ)_Yo)iRLG]|ct">
+            <field name="TEXT">!</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_on_message" id="!UQyf#UM;p/OzHcF:pZ!" x="2061" y="-222">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="}GoP0)/}XV%OzT]g$kCo">
+        <comment pinned="true" h="80" w="160">U can replace delete with smth else</comment>
+        <value name="IF0">
+          <block type="s4d_starts_with" id="9D!68OT;Zq~K5gveQQ]o">
+            <value name="STRING">
+              <shadow type="text" id="(^#FD1d+335xkOSUIX5^">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="s4d_message_content" id="4zoiC{M]V]{WeD=Ze`},"></block>
+            </value>
+            <value name="SUBSTRING">
+              <shadow type="text" id="R,{e9**8ZtkPG4GZ)I/6">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="text_join" id="W6Mz)Z?{FKW-=0p6EBHP">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="variables_get" id="6ja]`RPnr0%{k4B/c^xu">
+                    <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="*g3OO,w%BOH)a0!WTW+b">
+                    <field name="TEXT">gay</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="send_on_channel" id="sA5D)T]Y`^,OT,X4OqD5">
+            <value name="CHANNEL">
+              <block type="s4d_message_channel" id="Ah/C~1MllBcpT21(}PSH"></block>
+            </value>
+            <value name="IMAGE">
+              <block type="load_image" id="Z,N{}Mqjf6TL2-4%RQH$">
+                <value name="TOLOAD">
+                  <block type="1imagepng" id=".%{CqVAN8]E4,aYWpO9:">
+                    <mutation divisor_input="false"></mutation>
+                    <field name="INFO">Gay</field>
+                    <value name="IMAGE">
+                      <block type="s4d_member_icon" id="^LSE+%Qw*B^5a~gAPHvf">
+                        <value name="MEMBER">
+                          <block type="s4d_mentioned_member" id="=eHW~ipyai(;prw:f%6{"></block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="5I`~g+PNBu`I4fXer6VD">
+            <comment pinned="false" h="80" w="160">U can replace batslap with smth else</comment>
+            <value name="IF0">
+              <block type="s4d_starts_with" id="0R.ZA21_=`,QO+2MV3Y:">
+                <value name="STRING">
+                  <shadow type="text" id="DYr|bx?9F3QlJA=dSnD=">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="s4d_message_content" id="lSna%kN/Fk68Q:xF0_X@"></block>
+                </value>
+                <value name="SUBSTRING">
+                  <shadow type="text" id="%9E$+-fyQQ88N4(y%HI^">
+                    <field name="TEXT"></field>
+                  </shadow>
+                  <block type="text_join" id="iNyiy]6Xi-8Txo/c3P4J">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="variables_get" id="S?Y#T+:ou2gpe.1,^46E">
+                        <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text" id="Cy4WfFo/^K5pF,HA)3U:">
+                        <field name="TEXT">kiss</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="send_on_channel" id="J6:ZT2y8Go))i~zx#};|">
+                <value name="CHANNEL">
+                  <block type="s4d_message_channel" id="UNcn=rzo/0T1a|of%{Fo"></block>
+                </value>
+                <value name="IMAGE">
+                  <block type="load_image" id="i$NJD@{:lbpKsVmV|Mh4">
+                    <value name="TOLOAD">
+                      <block type="2imagepng" id="F]XfRs`iu3X=/ydPXSP3">
+                        <field name="INFO">Kiss</field>
+                        <value name="IMAGE">
+                          <block type="s4d_member_icon" id="mn}NtaIJVQa:z5@TI]L4">
+                            <value name="MEMBER">
+                              <block type="s4d_message_author" id="^P+l#C9XZUyh|Ab97X|T"></block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="IMAGE2">
+                          <block type="s4d_member_icon" id="N%8dd^7d/2GWutHib-._">
+                            <value name="MEMBER">
+                              <block type="s4d_mentioned_member" id="qpu?xv+wq@$!M(^ad~D,"></block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="k%jf0xSNg_KQ=0c5jP5~">
+                <value name="IF0">
+                  <block type="s4d_starts_with" id="*VpE[4OtL(lMx.+W15d!">
+                    <value name="STRING">
+                      <shadow type="text" id="$1uoI9;cr?J4M!*k^~8[">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="s4d_message_content" id="[c2jf3=qdvg0DLV2Pl?7"></block>
+                    </value>
+                    <value name="SUBSTRING">
+                      <shadow type="text" id="6C%EXbP-;m;0SNjT#zhQ">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="text_join" id="jZ%gGT,8o@vWjZ4Y*TpP">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="variables_get" id="#Y1)~f^h3yVf+wU)hNGo">
+                            <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="text" id="67wgPmX~TY@}q/iol*/8">
+                            <field name="TEXT">triggered</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="send_on_channel" id="S_AfChd/exKQUo,Z:]!T">
+                    <value name="CHANNEL">
+                      <block type="s4d_message_channel" id="h}O(68IWZ2gDO6ds~b]D"></block>
+                    </value>
+                    <value name="IMAGE">
+                      <block type="load_gif" id="YF|~gsc2qGWOLkZNWwZS">
+                        <value name="TOLOAD">
+                          <block type="1imagegif" id="ad?`tI8ZwZowVkJZ9cT6">
+                            <value name="IMAGE">
+                              <block type="s4d_member_icon" id="qV$!5_f(D+*Xc[Iz~an0">
+                                <value name="MEMBER">
+                                  <block type="s4d_mentioned_member" id=",?RDwt5%x%$5ngG]H?Y8"></block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="W$D?.lOW8(e^z{:2v?$5">
+                    <comment pinned="true" h="80" w="160">U can replace delete with smth else</comment>
+                    <value name="IF0">
+                      <block type="s4d_starts_with" id="FTHZRSF##jos$JJ:Y%H=">
+                        <value name="STRING">
+                          <shadow type="text" id="(^#FD1d+335xkOSUIX5^">
+                            <field name="TEXT">abc</field>
+                          </shadow>
+                          <block type="s4d_message_content" id="r5yOaNjc190z?`3Da]$6"></block>
+                        </value>
+                        <value name="SUBSTRING">
+                          <shadow type="text" id="R,{e9**8ZtkPG4GZ)I/6">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="text_join" id="xbL|dG;sqBwRoY?oatOU">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <block type="variables_get" id="3f_p^yflQJ;u*Yl/XUFW">
+                                <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="text" id="]@sTbu!hmK:h4hu=}UY5">
+                                <field name="TEXT">hitler</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="send_on_channel" id="5!m_Q|R~RjRgV)EAlA}1">
+                        <value name="CHANNEL">
+                          <block type="s4d_message_channel" id=")@jSAe]6UN2W.b.83N)V"></block>
+                        </value>
+                        <value name="IMAGE">
+                          <block type="load_image" id="secbq)60j7sATFzdQiIk">
+                            <value name="TOLOAD">
+                              <block type="1imagepng" id="1BIR2d;[f.5?K|dlY(%[">
+                                <mutation divisor_input="false"></mutation>
+                                <field name="INFO">Hitler</field>
+                                <value name="IMAGE">
+                                  <block type="s4d_member_icon" id="y6Mo,Ccp(:`mSL}/U=X}">
+                                    <value name="MEMBER">
+                                      <block type="s4d_mentioned_member" id="+cE|JkD%qNJm;PQ,a$y#"></block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="S[Ls@h@=w;FG$2Q7zvbi">
+                        <comment pinned="true" h="80" w="160">U can replace delete with smth else</comment>
+                        <value name="IF0">
+                          <block type="s4d_starts_with" id="+=2TA]8-/K%T[?QBSNXp">
+                            <value name="STRING">
+                              <shadow type="text" id="(^#FD1d+335xkOSUIX5^">
+                                <field name="TEXT">abc</field>
+                              </shadow>
+                              <block type="s4d_message_content" id=",cIs(E$06L8W4(f|?rH_"></block>
+                            </value>
+                            <value name="SUBSTRING">
+                              <shadow type="text" id="R,{e9**8ZtkPG4GZ)I/6">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="text_join" id="+|[KW],qQ0SUF9,MJ=$+">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <block type="variables_get" id="U;d1BcEpJvGY7c},:NM5">
+                                    <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="text" id="c1`hD8th5[N%qxsF[e)^">
+                                    <field name="TEXT">jail</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="send_on_channel" id="I+%TX,:rw8743:z[rgYx">
+                            <value name="CHANNEL">
+                              <block type="s4d_message_channel" id="{q.Usgm$0XR(]rh9|,81"></block>
+                            </value>
+                            <value name="IMAGE">
+                              <block type="load_image" id="7.-dP!WW(cg`?`#@05Rg">
+                                <value name="TOLOAD">
+                                  <block type="1imagepng" id=":9p)^]uP7sWmrMw0uFY*">
+                                    <mutation divisor_input="false"></mutation>
+                                    <field name="INFO">Jail</field>
+                                    <value name="IMAGE">
+                                      <block type="s4d_member_icon" id="@)b:;oe^IOn{DJt1aeGD">
+                                        <value name="MEMBER">
+                                          <block type="s4d_mentioned_member" id="1n0.~?c0^Ws@ywRsasje"></block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="]Z=6ExD#E*)PT1aNz8OR">
+                            <comment pinned="true" h="80" w="160">U can replace delete with smth else</comment>
+                            <value name="IF0">
+                              <block type="s4d_starts_with" id="rj5RjW~i(lzj[$ZtZPFE">
+                                <value name="STRING">
+                                  <shadow type="text" id="(^#FD1d+335xkOSUIX5^">
+                                    <field name="TEXT">abc</field>
+                                  </shadow>
+                                  <block type="s4d_message_content" id="r#Ce9_:Vgij[se_os*%["></block>
+                                </value>
+                                <value name="SUBSTRING">
+                                  <shadow type="text" id="R,{e9**8ZtkPG4GZ)I/6">
+                                    <field name="TEXT"></field>
+                                  </shadow>
+                                  <block type="text_join" id="-Jjok2~8Hc@#@87?s6G5">
+                                    <mutation items="2"></mutation>
+                                    <value name="ADD0">
+                                      <block type="variables_get" id="Wz%GA$:cOM5P41qcpOEz">
+                                        <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD1">
+                                      <block type="text" id="CP#M4_@DB,Qg%%pc{LLG">
+                                        <field name="TEXT">bobross</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="send_on_channel" id="Dc.QZs$~C.or!=3%dmQ$">
+                                <value name="CHANNEL">
+                                  <block type="s4d_message_channel" id="p;{3x3dMSn302CQR*b-I"></block>
+                                </value>
+                                <value name="IMAGE">
+                                  <block type="load_image" id="bzxbZ4KCQP?qOgIV@spW">
+                                    <value name="TOLOAD">
+                                      <block type="1imagepng" id="XA+*+hy/ShX/NH6rxvYg">
+                                        <mutation divisor_input="false"></mutation>
+                                        <field name="INFO">Bobross</field>
+                                        <value name="IMAGE">
+                                          <block type="s4d_member_icon" id="3)VMtO9`szpl7UKv+}]=">
+                                            <value name="MEMBER">
+                                              <block type="s4d_mentioned_member" id="gxsQnjbWb}jq-5W;U+RL"></block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="q(MK83S0Y@X%oN~2dXS`">
+                                <comment pinned="true" h="80" w="160">U can replace delete with smth else</comment>
+                                <value name="IF0">
+                                  <block type="s4d_starts_with" id="@5[`a6Dvk6(60XRI0=^o">
+                                    <value name="STRING">
+                                      <shadow type="text" id="(^#FD1d+335xkOSUIX5^">
+                                        <field name="TEXT">abc</field>
+                                      </shadow>
+                                      <block type="s4d_message_content" id="-z=J-]DR39.wt|=B=FN1"></block>
+                                    </value>
+                                    <value name="SUBSTRING">
+                                      <shadow type="text" id="R,{e9**8ZtkPG4GZ)I/6">
+                                        <field name="TEXT"></field>
+                                      </shadow>
+                                      <block type="text_join" id="7gZ/m@8ys%cmLS4Ztnh5">
+                                        <mutation items="2"></mutation>
+                                        <value name="ADD0">
+                                          <block type="variables_get" id="spoO7=u!i=u,[pG`i+zV">
+                                            <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD1">
+                                          <block type="text" id="m5#2}Hx)ut:G!^,vP.6}">
+                                            <field name="TEXT">discordblack</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="send_on_channel" id="?iVC=[/~:O~|}Frll+s4">
+                                    <value name="CHANNEL">
+                                      <block type="s4d_message_channel" id="pGHGAw~!ndHE$zlrwc5G"></block>
+                                    </value>
+                                    <value name="IMAGE">
+                                      <block type="load_image" id="_.hAxMZ8N?Shg,Ls6[Wv">
+                                        <value name="TOLOAD">
+                                          <block type="1imagepng" id="jmR`PtHGB1ia7E09#H^#">
+                                            <mutation divisor_input="false"></mutation>
+                                            <field name="INFO">DiscordBlack</field>
+                                            <value name="IMAGE">
+                                              <block type="s4d_member_icon" id="gTr;N}hL/!Uz}+#},p9f">
+                                                <value name="MEMBER">
+                                                  <block type="s4d_mentioned_member" id=")%_1%|mQ4$$+2I?SKi5I"></block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="controls_if" id="VYtOq]2FgbS$[?e1t5UG">
+                                    <comment pinned="true" h="80" w="160">U can replace delete with smth else</comment>
+                                    <value name="IF0">
+                                      <block type="s4d_starts_with" id="!dzuWEp%TrQ-V+$dsu}-">
+                                        <value name="STRING">
+                                          <shadow type="text" id="(^#FD1d+335xkOSUIX5^">
+                                            <field name="TEXT">abc</field>
+                                          </shadow>
+                                          <block type="s4d_message_content" id="$3w6NFjBsRx(r^grUz/i"></block>
+                                        </value>
+                                        <value name="SUBSTRING">
+                                          <shadow type="text" id="R,{e9**8ZtkPG4GZ)I/6">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                          <block type="text_join" id="*raLU+g(awvG4?Htra73">
+                                            <mutation items="2"></mutation>
+                                            <value name="ADD0">
+                                              <block type="variables_get" id="p`sT~EmxD[%VQ/=yz_?k">
+                                                <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                                              </block>
+                                            </value>
+                                            <value name="ADD1">
+                                              <block type="text" id="l~DhsN/vs_xjh?2Tt^U0">
+                                                <field name="TEXT">rip</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="send_on_channel" id="{5I/^VQ~GuF%_![;a]M;">
+                                        <value name="CHANNEL">
+                                          <block type="s4d_message_channel" id="dEO~tnvw[QiT}V^C9?FX"></block>
+                                        </value>
+                                        <value name="IMAGE">
+                                          <block type="load_image" id="7..Wj_/z~ef|8TL,STi^">
+                                            <value name="TOLOAD">
+                                              <block type="1imagepng" id="WkUz:M0(@qW^E#TEWj^)">
+                                                <mutation divisor_input="false"></mutation>
+                                                <field name="INFO">Rip</field>
+                                                <value name="IMAGE">
+                                                  <block type="s4d_member_icon" id="u)xtBrA4E%]]|BE2]u.!">
+                                                    <value name="MEMBER">
+                                                      <block type="s4d_mentioned_member" id="zWic*Tad6`y7aK]tUXbT"></block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="controls_if" id="xRbpS(Zf,y^1.i)D[)YZ">
+                                        <comment pinned="true" h="80" w="160">U can replace delete with smth else</comment>
+                                        <value name="IF0">
+                                          <block type="s4d_starts_with" id="^WlkLd1%/JUyn,Bh7x#0">
+                                            <value name="STRING">
+                                              <shadow type="text" id="(^#FD1d+335xkOSUIX5^">
+                                                <field name="TEXT">abc</field>
+                                              </shadow>
+                                              <block type="s4d_message_content" id="Nq!JZGGnx|gHmIQYcM)!"></block>
+                                            </value>
+                                            <value name="SUBSTRING">
+                                              <shadow type="text" id="R,{e9**8ZtkPG4GZ)I/6">
+                                                <field name="TEXT"></field>
+                                              </shadow>
+                                              <block type="text_join" id="LJ$Vc6?bepN7xqn=(W`!">
+                                                <mutation items="2"></mutation>
+                                                <value name="ADD0">
+                                                  <block type="variables_get" id="|!`%@{8ji[;^#oK.~GM3">
+                                                    <field name="VAR" id="-8Wbv(jP@O;slx/`tr1k">prefix</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ADD1">
+                                                  <block type="text" id="man]Y5Js0mN7sPwe$HqA">
+                                                    <field name="TEXT">ad</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="send_on_channel" id="H6n1f$8PDE#yRtEImwIM">
+                                            <value name="CHANNEL">
+                                              <block type="s4d_message_channel" id="F!@^%y+M$2S#mI7NnVq#"></block>
+                                            </value>
+                                            <value name="IMAGE">
+                                              <block type="load_image" id="y7Qw_:ux(S9igyamXRGI">
+                                                <value name="TOLOAD">
+                                                  <block type="1imagepng" id="Rud1?M(?,UucvEQyeHn!">
+                                                    <mutation divisor_input="false"></mutation>
+                                                    <field name="INFO">Ad</field>
+                                                    <value name="IMAGE">
+                                                      <block type="s4d_member_icon" id="z#w]nul,-k1g_z;%?Y,]">
+                                                        <value name="MEMBER">
+                                                          <block type="s4d_mentioned_member" id="f~djYI8Cq;_}fQUSn}Ad"></block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_database_create_new" id="i]%JVcoXLl_2Cd7*dJ46" x="0" y="0">
+    <value name="NAME">
+      <shadow type="text" id="g@Wju!*[iR:^ES|f}$WU">
+        <field name="TEXT">levels</field>
+      </shadow>
+    </value>
+    <value name="FILE">
+      <shadow type="text" id="+ehdHF~9_Eeq{RD5RZX]">
+        <field name="TEXT">levels</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="s4d_login" id="j7Z/nsQzit[$PXVcjvJ(" x="0" y="106">
+    <value name="TOKEN">
+      <shadow type="text" id="Vy{)b?n.b)xwxH(3w7]0">
+        <field name="TEXT">BOT TOKEN HERE</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="frost_slash_register" id="Uj9CL%t;`{[,I?2=r:oV" x="-10" y="218">
+    <statement name="OPTIONS">
+      <block type="frost_slash_command" id="mGK:RqQ[tr:+7#.S%v2{">
+        <value name="NAME">
+          <shadow type="text" id="v`hqQ6u8SCtyoVa@LmJ|">
+            <field name="TEXT">level</field>
+          </shadow>
+        </value>
+        <value name="DESC">
+          <shadow type="text" id="7)RmyPCK{A8my8.v86uf">
+            <field name="TEXT">View your or another person's level</field>
+          </shadow>
+        </value>
+        <statement name="OPTIONS">
+          <block type="gsa_frost_slash_options" id=",`rJN~qiFxlw#{~h6LRw">
+            <field name="TYPE">6</field>
+            <value name="NAME">
+              <shadow type="text" id="5pnVK$Ep|#MI/{R.XB2_">
+                <field name="TEXT">user</field>
+              </shadow>
+            </value>
+            <value name="DESC">
+              <shadow type="text" id=".!UtK;0Qd!FIQjU{p]^i">
+                <field name="TEXT">The person that you want to see the level of</field>
+              </shadow>
+            </value>
+            <value name="REQUIRED">
+              <shadow type="logic_boolean" id="s1zeg(`Tba,03MSPVa1#">
+                <field name="BOOL">FALSE</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="on_slash" id="cP7-hxE47?Q*[g5d3P^o" x="0" y="724">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="kY`t|CP7]vc:32Y),qWt">
+        <value name="IF0">
+          <block type="logic_compare" id="%hu94NHhed%9h5i!x.9u">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="interaction_name" id="5d`G}sVo%-SrS=;.IMF8"></block>
+            </value>
+            <value name="B">
+              <block type="jg_text_remake_paragraph_quotes" id="y-4}oZq#7e)ir0y)_2;A">
+                <field name="TEXT">level</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="jg_other_try_catch_finally" id="BNLd@$okW7L..MgJRm@I">
+            <mutation xmlns="http://www.w3.org/1999/xhtml" iferror="true"></mutation>
+            <statement name="TRY">
+              <block type="variables_set" id="SS{X1o9jkB*)q`ACHr!`">
+                <field name="VAR" id="M[vaD@JoJPb/1tEa6?p~">member_xp</field>
+                <value name="VALUE">
+                  <block type="s4d_get_data_new" id="(uScp_80t{qdi4:?~#{x">
+                    <value name="KEY">
+                      <shadow type="text" id="-)(Ta|[H.wGHm/_3ELdr">
+                        <field name="TEXT">hello</field>
+                      </shadow>
+                      <block type="text_join" id="k(`]TX(OcfGN[jq{%yJ$">
+                        <mutation items="4"></mutation>
+                        <value name="ADD0">
+                          <block type="s4d_member_id" id="dhJ`i79]jgzghg6AqDdu">
+                            <value name="MEMBER">
+                              <block type="options" id="rs!.XZMkWVl`lP9/PnW(">
+                                <mutation mode="Member" type="null"></mutation>
+                                <field name="SEARCH">Member</field>
+                                <value name="BOOLEAN">
+                                  <block type="jg_text_remake_paragraph_quotes" id=",c)uhFQJHY(pyHe!DVN*">
+                                    <field name="TEXT">user</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="jg_text_remake_paragraph_quotes" id=")q)d;KfWA,V~KQ@4Z_jw">
+                            <field name="TEXT">-</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="s4d_server_id" id="^iv||%L)9#(SH3yv]pki">
+                            <value name="SERVER">
+                              <block type="interaction_guild" id="RqS)ky7ltEMzW]}Irx|T"></block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD3">
+                          <block type="jg_text_remake_paragraph_quotes" id="Gsr25oPMg/]_L||sG1s?">
+                            <field name="TEXT">-xp</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="NAME">
+                      <shadow type="text" id="sf}q*]CFI7o-{6TJd#GO">
+                        <field name="TEXT">levels</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="c`.-XMj,{1it@Zmk@pT[">
+                    <field name="VAR" id="+@B4vb]CdaQAcV3iYZ3L">member_level</field>
+                    <value name="VALUE">
+                      <block type="s4d_get_data_new" id="/7NsT:$|@JW(@o8so4:K">
+                        <value name="KEY">
+                          <shadow type="text" id="-)(Ta|[H.wGHm/_3ELdr">
+                            <field name="TEXT">hello</field>
+                          </shadow>
+                          <block type="text_join" id="6)xw)UXb@][OUJ}p435n">
+                            <mutation items="4"></mutation>
+                            <value name="ADD0">
+                              <block type="s4d_member_id" id="qZ(7ZWPesI*$+Y4DLr@?">
+                                <value name="MEMBER">
+                                  <block type="options" id="!6XDbY=V)@Zr=NJo=Ktw">
+                                    <mutation mode="Member" type="null"></mutation>
+                                    <field name="SEARCH">Member</field>
+                                    <value name="BOOLEAN">
+                                      <block type="jg_text_remake_paragraph_quotes" id="tvRLDg/hnOk5F`PXjTbG">
+                                        <field name="TEXT">user</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="jg_text_remake_paragraph_quotes" id="-aQx6#40qm?jxcYqT:Wz">
+                                <field name="TEXT">-</field>
+                              </block>
+                            </value>
+                            <value name="ADD2">
+                              <block type="s4d_server_id" id="1EmL/AxQ6?pp*j?3T%7(">
+                                <value name="SERVER">
+                                  <block type="interaction_guild" id="S:gh_v[W7L4e^!V@:.vz"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD3">
+                              <block type="jg_text_remake_paragraph_quotes" id="Ks+[;bX`C}X;69m1)vZL">
+                                <field name="TEXT">-level</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="NAME">
+                          <shadow type="text" id="hvxjK^pD0+C,hUsLl}HO">
+                            <field name="TEXT">levels</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id=":pMJF#47L}oo(sab4UOA">
+                        <field name="VAR" id="?X1MhISYX#`t0[)Uz%FZ">member_xp_needed</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="]X]CJ(viOp+c-7x`o?V|">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <shadow type="math_number" id="3xYu^yIM,vQG{pj(v;?@">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="MMdqr%7.=Mp=gT#@O2d7">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="BY,J[q=ggDj~D=wB6F5}">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_arithmetic" id="O]|9/B9)|IL5L~XOVI?=">
+                                    <field name="OP">MULTIPLY</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="6`OFfwd{W},iQpXp|j.:">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="[Z]o9(8[Ez(JwTcK+.Mc">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="tVeyy-g.P{~PD/84s/#.">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="G~`Ka;qfZLORJO#r]WvT">
+                                            <field name="VAR" id="+@B4vb]CdaQAcV3iYZ3L">member_level</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="B?,PN:TPQ7v`ZRH-aa..">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id=",G!ek,_A~J5MouH)3nJm">
+                                        <field name="NUM">100</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="l,EBT6z%S)V|YB|+{h:t">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="tVeyy-g.P{~PD/84s/#.">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="K]1GLsKO+k]lGL*~vBg$">
+                                            <field name="VAR" id="+@B4vb]CdaQAcV3iYZ3L">member_level</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="}!)cz%cGEtu3W;IIfGSk">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="rpLvg%:OzDTsJw`JQ%U~">
+                                    <field name="NUM">100</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="ad7J1]W;VY^nBCy@wmkZ">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="t59@rP6*0pU{vUN1]DS$">
+                                <field name="VAR" id="M[vaD@JoJPb/1tEa6?p~">member_xp</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="s4d_send_in_channel" id="E{O*)OD|s7J.Z|hGac(G">
+                            <field name="INTERACTION">interaction</field>
+                            <value name="CONTENT">
+                              <block type="jg_text_remake_paragraph_quotes" id="/lGt(z+?(_U!~Xdk:R.y">
+                                <field name="TEXT"> </field>
+                              </block>
+                            </value>
+                            <value name="GW">
+                              <block type="s4d_create_rankcard_then" id="$v5BH!pu%LqZ0TH;fdn]">
+                                <statement name="THEN">
+                                  <block type="s4d_set_username" id="44qSvjyk~eLJ*]oK7a_D">
+                                    <value name="STRING">
+                                      <block type="jg_members_member_s_nickname" id="Wf5Xx-}6E)jyp{JuNG;S">
+                                        <value name="MEMBER">
+                                          <block type="options" id="Ir`/2}$==CUAhQ_yzLbN">
+                                            <mutation mode="Member" type="null"></mutation>
+                                            <field name="SEARCH">Member</field>
+                                            <value name="BOOLEAN">
+                                              <block type="jg_text_remake_paragraph_quotes" id="on2(P|r,1)Yuyc1K!V`]">
+                                                <field name="TEXT">user</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="s4d_set_rank_name" id="l%+Fkl|`jDsCutlM7y|m">
+                                        <value name="VALUE">
+                                          <block type="s4d_server_name" id="x}pyq4s0Aq#Q_ft*_-7a">
+                                            <value name="SERVER">
+                                              <block type="interaction_guild" id="!]v?^bb4_W15DXAYNHk6"></block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="s4d_set_avatar" id="y5AFeAt:lDGRQ;zLf63W">
+                                            <value name="STRING">
+                                              <block type="s4d_member_icon" id="wQLHGck4c:t7ZRy6N9/x">
+                                                <value name="MEMBER">
+                                                  <block type="options" id="L6W^CsQ=?@{Gn%Lj~K@;">
+                                                    <mutation mode="Member" type="null"></mutation>
+                                                    <field name="SEARCH">Member</field>
+                                                    <value name="BOOLEAN">
+                                                      <block type="jg_text_remake_paragraph_quotes" id=";@d%gvj/~mytiS@5dPRx">
+                                                        <field name="TEXT">user</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="s4d_set_xp" id="A75#W4G#I?6wm*wqmPR*">
+                                                <field name="TYPE">current</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="?]($6/]Q9Qt6X*m4`jnO">
+                                                    <field name="VAR" id="M[vaD@JoJPb/1tEa6?p~">member_xp</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="s4d_set_xp" id="JD9%O$h[a=.V;^N;b_51">
+                                                    <field name="TYPE">needed</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="z.V1_OwCtNUsaRC)tA[H">
+                                                        <field name="VAR" id="?X1MhISYX#`t0[)Uz%FZ">member_xp_needed</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="s4d_set_level" id="pRLTu~{q4$`BQ}8Ai+e`">
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="rdaQ+e#.hQer){*YoJ98">
+                                                            <field name="VAR" id="+@B4vb]CdaQAcV3iYZ3L">member_level</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="s4d_set_background" id="(9k,WS3ZUA%iwVZAWO4}">
+                                                            <value name="STRING">
+                                                              <block type="jg_text_remake_paragraph_quotes" id=";_jzEjDO1D%z@r(Pu0pN">
+                                                                <field name="TEXT">https://i.pinimg.com/564x/76/94/3a/76943a096e799de91140ec4563c4b4fc.jpg</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="s4d_set_addon" id="KGMt][(i8`Z}[N7BFJp$">
+                                                                <field name="TYPE">Rank</field>
+                                                                <value name="BOOLEAN">
+                                                                  <block type="logic_boolean" id="$](zcUn].VWId]n=DK%k">
+                                                                    <field name="BOOL">FALSE</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="IFERROR">
+              <block type="variables_set" id="NzoeQ%P[-7X[=caNBppH">
+                <field name="VAR" id="M[vaD@JoJPb/1tEa6?p~">member_xp</field>
+                <value name="VALUE">
+                  <block type="s4d_get_data_new" id="Bgs!(?V7I38Nn)5+PY4f">
+                    <value name="KEY">
+                      <shadow type="text" id="-)(Ta|[H.wGHm/_3ELdr">
+                        <field name="TEXT">hello</field>
+                      </shadow>
+                      <block type="text_join" id="KkGWch^bJ^^7UDm-sMjE">
+                        <mutation items="4"></mutation>
+                        <value name="ADD0">
+                          <block type="s4d_member_id" id="9@5^oBYl~V8VH^3|ad]h">
+                            <value name="MEMBER">
+                              <block type="interaction_author" id="IVNwd0qh0mcj+il{Ge9@"></block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="jg_text_remake_paragraph_quotes" id="A@qS$_`L.`^NQ,ot[_^S">
+                            <field name="TEXT">-</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="s4d_server_id" id="-7-`UT-9phCT-{Ts(+hW">
+                            <value name="SERVER">
+                              <block type="interaction_guild" id="q*c*RfRVrEYM;I{^3!8]"></block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD3">
+                          <block type="jg_text_remake_paragraph_quotes" id="w=E%e8n6R:XNya;r8v@2">
+                            <field name="TEXT">-xp</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="NAME">
+                      <shadow type="text" id="j*LzTHVE{r%tP]p78e|2">
+                        <field name="TEXT">levels</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="=_aCG%*s*d~U=Yi*b](,">
+                    <field name="VAR" id="+@B4vb]CdaQAcV3iYZ3L">member_level</field>
+                    <value name="VALUE">
+                      <block type="s4d_get_data_new" id="PXy@p~MwftFGH{RRzphM">
+                        <value name="KEY">
+                          <shadow type="text" id="-)(Ta|[H.wGHm/_3ELdr">
+                            <field name="TEXT">hello</field>
+                          </shadow>
+                          <block type="text_join" id="mGz$nahdJ`S81#bk+d8C">
+                            <mutation items="4"></mutation>
+                            <value name="ADD0">
+                              <block type="s4d_member_id" id=")m3{w_[YQc3jk3I#$lgb">
+                                <value name="MEMBER">
+                                  <block type="interaction_author" id="_~1r*URM-Nmw,{A#0b*E"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="jg_text_remake_paragraph_quotes" id="|mBLonD5:S_w~T@l;yzd">
+                                <field name="TEXT">-</field>
+                              </block>
+                            </value>
+                            <value name="ADD2">
+                              <block type="s4d_server_id" id="cw@S`|jBm?R]t?V-@r39">
+                                <value name="SERVER">
+                                  <block type="interaction_guild" id="NVC+jxGiP!$T1)-DojS["></block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD3">
+                              <block type="jg_text_remake_paragraph_quotes" id="dmo7%g|-wFoz1nd==];e">
+                                <field name="TEXT">-level</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="NAME">
+                          <shadow type="text" id="c!e}a69HmA2%p~q=*wR/">
+                            <field name="TEXT">levels</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="F0XbC@$^A~Li[2JS35BH">
+                        <field name="VAR" id="?X1MhISYX#`t0[)Uz%FZ">member_xp_needed</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="2,|=e2rMj~Mfip*6`/wC">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <shadow type="math_number" id="3xYu^yIM,vQG{pj(v;?@">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="Pi}#;Z1pQ^eOiv/~Fe-x">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="BY,J[q=ggDj~D=wB6F5}">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_arithmetic" id="9$T^ZK/cprpq3u]xCmK5">
+                                    <field name="OP">MULTIPLY</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="6`OFfwd{W},iQpXp|j.:">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="P.+wklNBXstCSUaMHS};">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="tVeyy-g.P{~PD/84s/#.">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="II-h5PbbY09q6Dio$y+j">
+                                            <field name="VAR" id="+@B4vb]CdaQAcV3iYZ3L">member_level</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="x8i)ER1gd:_u;~|dF/pL">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id=",G!ek,_A~J5MouH)3nJm">
+                                        <field name="NUM">100</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="}kIs!.)otv=6)}@k|9ex">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="tVeyy-g.P{~PD/84s/#.">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="UHJ3apJK`b@u{;zSp=`E">
+                                            <field name="VAR" id="+@B4vb]CdaQAcV3iYZ3L">member_level</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="9?e8_5P,a#4fL9tT#%ER">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="]Dxl/g/lL#i|=t{vDL32">
+                                    <field name="NUM">100</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="ad7J1]W;VY^nBCy@wmkZ">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="M@X^wJ2B(I=4,b6B1Vnx">
+                                <field name="VAR" id="M[vaD@JoJPb/1tEa6?p~">member_xp</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="s4d_send_in_channel" id="I={1jmw;TFS82*gQX(!Q">
+                            <field name="INTERACTION">interaction</field>
+                            <value name="CONTENT">
+                              <block type="jg_text_remake_paragraph_quotes" id="zg}xJMAP+,#8^ST-q5zg">
+                                <field name="TEXT"> </field>
+                              </block>
+                            </value>
+                            <value name="GW">
+                              <block type="s4d_create_rankcard_then" id="ukb`)cCH}7;q*kqB#8PD">
+                                <statement name="THEN">
+                                  <block type="s4d_set_username" id="/7,f8*lt%HE4B{TW=).T">
+                                    <value name="STRING">
+                                      <block type="jg_members_member_s_nickname" id="!g%g23dfL)E3]}fU!8lR">
+                                        <value name="MEMBER">
+                                          <block type="interaction_author" id=".8mR{7NFf$Jjjw:WIKDa"></block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="s4d_set_rank_name" id="5i0P3:=lPSGUYO#OkB2d">
+                                        <value name="VALUE">
+                                          <block type="s4d_server_name" id="?ttenMf#7eW_-dPc)*{m">
+                                            <value name="SERVER">
+                                              <block type="interaction_guild" id="$XtaXl{/A9K|Za?G.3PI"></block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="s4d_set_avatar" id="F1.,v`4c(rwdKA(QwTQJ">
+                                            <value name="STRING">
+                                              <block type="s4d_member_icon" id="sdPvhjR*6{^2eDR1Ad=B">
+                                                <value name="MEMBER">
+                                                  <block type="interaction_author" id="jglw1OzcE/zri%!TKw@R"></block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="s4d_set_xp" id="f8^90oDA(gD,!))?}_3;">
+                                                <field name="TYPE">current</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="GBh7=B~A-8`aQyug+l)D">
+                                                    <field name="VAR" id="M[vaD@JoJPb/1tEa6?p~">member_xp</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="s4d_set_xp" id="^URWne$Vv|}z!#:*D|yn">
+                                                    <field name="TYPE">needed</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="NN)|G#St;:FHhaq#|sh-">
+                                                        <field name="VAR" id="?X1MhISYX#`t0[)Uz%FZ">member_xp_needed</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="s4d_set_level" id="P@AD[]*(s*Uxr5HBWYC/">
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="F9c4vW_*Did1^{jxu%F)">
+                                                            <field name="VAR" id="+@B4vb]CdaQAcV3iYZ3L">member_level</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="s4d_set_background" id="GR%Q3[,O,/=QT/Aif!jn">
+                                                            <value name="STRING">
+                                                              <block type="jg_text_remake_paragraph_quotes" id="%)+wiT+:c!,IfXG5,fV0">
+                                                                <field name="TEXT">https://i.pinimg.com/564x/76/94/3a/76943a096e799de91140ec4563c4b4fc.jpg&amp;#10;</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="s4d_set_addon" id="y;E|Oo+R440Sb2},swb6">
+                                                                <field name="TYPE">Rank</field>
+                                                                <value name="BOOLEAN">
+                                                                  <block type="logic_boolean" id="4~ze:n8+J$`v{I_[j2j#">
+                                                                    <field name="BOOL">FALSE</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
